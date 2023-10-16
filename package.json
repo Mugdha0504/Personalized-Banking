@@ -1,0 +1,48 @@
+{
+  "name": "Fintech-personal-bank",
+  "version": "1.1.0",
+  "description": "Personalised Banking System",
+  "repository": "https://github.com/dhairyaameria/Fintech-personal-bank.git",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "@popperjs/core": "2.9.1",
+    "@tailwindcss/forms": "0.2.1",
+    "axios": "^1.4.0",
+    "chart.js": "2.9.4",
+    "firebase": "^9.21.0",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "mongodb": "^5.3.0",
+    "next": "10.0.9",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-scripts": "4.0.3",
+    "tailwindcss": "2.0.4"
+  },
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next dev",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
+    "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "typescript": "4.2.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.2.5",
+    "mongoose": "^7.1.0",
+    "postcss": "8.2.8"
+  }
+}
